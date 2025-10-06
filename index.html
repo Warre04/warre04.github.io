@@ -1,24 +1,1107 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta author="Warre Moons">
-    <title>Portfolio Warre Moons</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Warre Moons</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <section>
-        <div id="welcometext">
-            <h2>Welkom</h2>
-            <p>Ik ben een front-end developer die graag werkt met <abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">css</abbr> en Javascript. Ik ben een <strong>creative denker</strong> die <small>graag</small> nieuwe dingen leert en uitprobeert. Ik ben op zoek naar een job waar ik mijn vaardigheden kan gebruiken en verder kan ontwikkelen.</p>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img class="avatar-box" src="./assets/images/my-avatar.png" alt="Warre Moons" width="80" height="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Warre Moons">Warre Moons</h1>
+
+          <p class="title">Electronics engineer</p>
         </div>
-    </section>
-    <header>
-        <h4>Expertise </h4>
-        <h4>Over mij </h4>
-        <h4>Mijn Projecten  </h4>
-        <h4>Technische vaardigheden en cv </h4>
-        <h4>Contact</h4>
-    </header>
-    
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:warre.moons@gmail.com" class="contact-link">warre.moons@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+32490425359" class="contact-link">+32 490 42 53 59</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="-06-16">June 16, 2004</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Heusden-Zolder, 3550, Belgium</address>
+            </div>
+
+          </li>
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="car-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Driver's License</p>
+
+              <p class="sidebar-text">Belgium AM and B</p>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.facebook.com/warre.moons" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/warre-moons-a786b82b6/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/warre.moons/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/Warre04" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I’m a Master’s student in Electronics and ICT Engineering Technology, currently in my final year. I’m
+            passionate about technology — both the digital and the physical side of it. I love tinkering with my home
+            server, experimenting with self-hosted solutions, and building projects that blend hardware and software.
+
+
+          </p>
+
+          <p>
+            My focus is on creating practical, efficient, and reliable systems. Whether I’m designing a circuit board,
+            setting up a new network service, or debugging a piece of hardware, I enjoy understanding every layer of how
+            things work. I take pride in hands-on work and believe that the best engineering happens where creativity
+            meets precision.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Fascinated by:</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-pcb.svg
+                " alt="pcb icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">PCB Design</h4>
+
+                <p class="service-item-text">
+                  Designing digital and analog PCBs for modern day problems.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-server.svg" alt="server icon" width="40"> </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Home Lab</h4>
+
+                <p class="service-item-text">
+                  Self-hosted services for day to day use.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="web design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Functional web design</h4>
+
+                <p class="service-item-text">
+                  Designing websites for a specific audience and purpose.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-motor.svg" alt="motor icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Building electrical transportation methods</h4>
+
+                <p class="service-item-text">
+                  Making absurd electrical transportation ideas reality.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <section class="tech-stack">
+          <h3 class="h3 service-title">Technology Stack</h3>
+
+          <div class="tech-icons">
+            <div class="tech-icon" title="Python">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"
+                width="32" height="32">
+            </div>
+            <div class="tech-icon" title="C++">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg"
+                alt="Java" width="32" height="32">
+            </div>
+
+            <div class="tech-icon" title="Linux">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux"
+                width="32" height="32">
+            </div>
+            <div class="tech-icon" title="Scikit-learn">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg"
+                alt="Scikit-learn" width="32" height="32">
+            </div>
+            <div class="tech-icon" title="Git">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" width="32"
+                height="32">
+            </div>
+            <div class="tech-icon" title="Docker">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"
+                width="32" height="32">
+            </div>
+
+            <div class="tech-icon" title="NumPy">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy"
+                width="32" height="32">
+            </div>
+            <div class="tech-icon" title="Pandas">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas"
+                width="32" height="32">
+            </div>
+            <div class="tech-icon" title="Pandas">
+              <img src="
+             https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                alt="JavaScript" width="32" height="32">
+            </div>
+            <div class="tech-icon" title="Ubuntu">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg" alt="Ubuntu"
+                width="32" height="32">
+            </div>
+            <div class="tech-icon" title="VS Code">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code"
+                width="32" height="32">
+            </div>
+            <div class="tech-icon" title="Ollama">
+              <img src="https://avatars.githubusercontent.com/u/151674099?s=32" alt="Ollama" width="32" height="32">
+            </div>
+            <div class="tech-icon" title="Laravel">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg"
+                alt="Laravel" width="32" height="32">
+            </div>
+            <div class="tech-icon" title="Nginx">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nginx/nginx-original.svg" alt="Nginx"
+                width="32" height="32">
+            </div>
+            <div class="tech-icon" title="Livewire">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/livewire/livewire-original-wordmark.svg"
+                alt="Livewire" width="32" height="32">
+            </div>
+            <div class="tech-icon" title="AWS">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+                alt="AWS" width="32" height="32">
+            </div>
+            <div class="tech-icon" title="Linux Mint">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linuxmint/linuxmint-original.svg"
+                alt="Linux Mint" width="32" height="32">
+            </div>
+            <div class="tech-icon" title="Arduino">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/arduino/arduino-original-wordmark.svg"
+                alt="Arduino" width="32" height="32">
+            </div>
+            <div class="tech-icon" title="Raspberry Pi">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/raspberrypi/raspberrypi-original.svg"
+                alt="Raspberry Pi" width="32" height="32">
+            </div>
+            <div class="tech-icon" title="MATLAB">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matlab/matlab-original.svg"
+                alt="MATLAB" width="32" height="32">
+            </div>
+            <div class="tech-icon" title="Portainer">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/portainer/portainer-original.svg"
+                alt="Portainer" width="32" height="32">
+            </div>
+            <div class="tech-icon" title="Windows 11">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows11/windows11-original.svg"
+                alt="Windows 11" width="32" height="32">
+            </div>
+          </div>
+
+        </section>
+
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+          <div class="resume-download">
+            <a href="./assets/resume/Warre_Moons_CV.pdf" download="Warre_Moons_CV.pdf" class="download-btn"
+              target="_blank" rel="noopener noreferrer">
+              <span>📄</span>
+              Download Resume
+            </a>
+          </div>
+        </header>
+
+        
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="School-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">University Hasselt and KU Leuven</h4>
+
+              <span>2025 — Today</span>
+
+              <p class="timeline-text">
+                Masters of Electronics and ICT Engineering Technology.
+              </p>
+              <p class="timeline-text">
+                To be graduated in june 2026 </p>
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">University Hasselt and KU Leuven</h4>
+
+              <span>2022 — 2025</span>
+
+              <p class="timeline-text">
+                Bachelor of Electronics and ICT Engineering Technology.
+              </p>
+              <p class="timeline-text">
+                Graduated magna cum laude
+              </p>
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">VDS</h4>
+
+              <span>Summer 2022</span>
+
+              <p class="timeline-text">
+                Senior Leader Training for organizing non-profit and managing a team.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Don Bosco Helchteren</h4>
+
+              <span>2016 - 2022</span>
+
+              <p class="timeline-text">
+                Industrial sciences.
+              </p>
+
+            </li>
+
+
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="Briefcase-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Assistant Electrician - Sobelco Technics</h4>
+
+              <span>Juli 2019 - Today</span>
+
+              <p class="timeline-text">
+                Assisted in the installation of general electrical systems
+                and home automation. Contributed to high-quality and
+                safe project execution through precise and efficient work.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Treasurer - SPW Boekties VZW</h4>
+
+              <span>2019 — Today</span>
+
+              <p class="timeline-text">
+                Served as treasurer, achieving a 50% increase in profits
+                over two years. Designed and coded a PHP website with
+                full member management, post feed, and webshop,
+                allowing both parents and staff to create accounts.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Internship - Painting With Light</h4>
+
+              <span>February - June 2025</span>
+
+              <p class="timeline-text">
+                Research and developed a custom interactive stair step
+                for an internal project, contributing to design,
+                prototyping, and testing.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Solution Architect - MediaMarkt Hasselt</h4>
+
+              <span>Summer 2025</span>
+
+              <p class="timeline-text">
+                Offered hands-on technical support by resolving complex
+                hardware and software issues. Handled the preparation of
+                laptops, PCs, and smartphones for customers.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Production Assistant - Amptec</h4>
+
+              <span>Summer 2024</span>
+
+              <p class="timeline-text">
+                Contributed to the production of audio system cabling,
+                including large-scale soldering work. Ensured accuracy
+                and reliability in assembly to meet high technical
+                standards.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Webdesigner - Optiled</h4>
+
+              <span>February 2024</span>
+
+              <p class="timeline-text">
+                Designed and developed a website with an integrated
+                webshop using a WYSIWYG editor, ensuring user-friendly
+                layout and functionality.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <h4 class="h4 skills-subtitle">Electrical</h4>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Soldering</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">PCB Design and etching production</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Microcontrollers (Arduino, ESP32, PSOC)</h5>
+                <data value="85">85%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+
+            </li>
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Analog simulation (LTSpice)</h5>
+                <data value="75">75%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">HDL digital design</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+          <h4 class="h4 skills-subtitle">Computer Science</h4>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Full stack web development (PHP, JavaScript, HTML, CSS, Database, nginx)</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Amazon Web Services (EC2, VPC, Route 53)</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Laravel</h5>
+                <data value="75">75%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">WIX (studio) WYSIWYG web design</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Git</h5>
+                <data value="85">85%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+
+            </li>
+          </ul>
+
+          <h4 class="h4 skills-subtitle">Mechanical</h4>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Manual milling and lathe</h5>
+                <data value="65">65%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 65%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">3D-printing</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">3D CAD Design (Autodesk Inventor)</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+          <h4 class="h4 skills-subtitle">Management</h4>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Microsoft Office 365</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Non profit accounting</h5>
+                <data value="100">100%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+
+            </li>
+
+
+
+          </ul>
+
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #projects
+      -->
+
+      <article class="portfolio" data-page="projects">
+
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Competition</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Electronics</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Competition</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Electronics</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="blog-post-item project-item active" data-filter-item data-category="web development">
+              <a href="https://speelpleinboekt.be" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/BoektiesSite.png" alt="SPW Boekties Website" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Web development</p>
+
+                    <span class="dot"></span>
+
+                    <p class="blog-category">Active project</p>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">SPW Boekties Website</h3>
+
+                  <p class="blog-text">
+                    Custom website with member management, internal post feed, webshop for members, parent account and
+                    more. Realised using Laravel.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item project-item active" data-filter-item data-category="web development">
+              <a href="https://optiledbv.be" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/OptiledSite.png" alt="SPW Boekties Website" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Web development</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2024-03-29">March 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Optiled BV Website</h3>
+
+                  <p class="blog-text">
+                    Website with an integrated webshop using a WYSIWYG editor. Designed with a user-friendly layout and
+                    functionality in mind.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item project-item active" data-filter-item data-category="electronics">
+              <a href="#"
+                >
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/couch-project.png" alt="electric drivable couch" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Electronics</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2024-03-29">June 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">electric drivable couch</h3>
+
+                  <p class="blog-text">
+                    Designed and built an electric drivable couch as a fun and innovative project. The couch is equipped with two brushless motors, two vesc and a microcontroller.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item project-item active" data-filter-item data-category="competition">
+              <a href="https://press.nmbs.be/don-bosco-helchteren-grote-winnaar-van-bert-de-nationale-technologiewedstrijd-van-nmbs"
+                target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/BERT.png" alt="SPW Boekties Website" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Competition</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2024-03-29">June 2021</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">NMBS BERT-project</h3>
+
+                  <p class="blog-text">
+                    Designed an innovative boarding assistance system for individuals with reduced mobility. The system
+                    integrates a camera for wheelchair detection, ensuring seamless and safe boarding. This project was
+                    part of a competition aimed at enhancing accessibility and inclusivity in public transportation.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82397.89799214623!2d5.205714866111762!3d51.02389562649222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c12462111722f5%3A0xbdbe930df492d0c5!2s3550%20Heusden-Zolder!5e1!3m2!1snl!2sbe!4v1759751372311!5m2!1snl!2sbe"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="https://formsubmit.co/warre.moons@gmail.com" class="form" data-form method="POST">
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
